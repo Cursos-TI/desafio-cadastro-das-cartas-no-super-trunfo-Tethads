@@ -1,0 +1,92 @@
+#include<stdio.h>
+int main(){
+printf("Desafio Super Trunfo Países\n");
+
+// declaração das variáveis
+//carta 1
+ char estado_1 = 'A';
+ char codigo_1 [4] = "A01";
+ char cidade_1 [18]= "Rio de Janeiro";
+ int populacao_1= 2281200;
+ float area_1 = 3907.75;
+ float PIB_1 = 4765.44;
+ int pontos_turisticos_1 = 30;
+ //carta2
+ char estado_2 = 'B';
+ char codigo_2 [4]= "B02";
+ char cidade_2 [18]= "Fortaleza";
+ int populacao_2 = 4846900;
+ float area_2 = 4568.87;
+ float PIB_2 = 6778.67;
+ int pontos_turisticos_2 = 50;
+ 
+//entrada dos dados carta 1
+
+ printf("Digite o estado carta 1:\n");
+ scanf(" %c", &estado_1);
+ 
+ printf("Digite o codigo da cidade 1:\n");
+ scanf("%s", codigo_1);
+ 
+ printf("Digite o nome da cidade 1:\n");
+ scanf(" %[^\n]", cidade_1); //ler strings que possa conter espaços em branco 
+ 
+ printf("Digite a populacao 1:\n");
+ scanf("%d", &populacao_1);
+ 
+ printf("Digite a area 1 (em km²):\n");
+ scanf("%f", &area_1);
+ 
+ printf("Digite o PIB 1 (em milhoes):\n");
+ scanf("%f", &PIB_1);
+ 
+ printf("Digite a quantidade dos pontos turisticos 1:\n");
+ scanf("%d", &pontos_turisticos_1);
+ 
+ //entrada de dados carta 2
+ 
+ printf("Digite o estado carta 2:\n");
+ scanf(" %c", &estado_2);
+ 
+ printf("Digite o codigo da cidade 2:\n");
+ scanf("%s", codigo_2);
+ 
+ printf("Digite o nome da cidade 2:\n");
+ scanf(" %[^\n]", cidade_2); //ler strings que possa conter espaços em branco
+ 
+ printf("Digite a populacao 2:\n");
+ scanf("%d", &populacao_2);
+ 
+ printf("Digite a area 2 (em km²):\n");
+ scanf("%f", &area_2);
+ 
+ printf("Digite o PIB 2 (em milhoes):\n");
+ scanf("%f", &PIB_2);
+ 
+ printf("Digite a quantidade dos pontos turisticos 2:\n");
+ scanf("%d", &pontos_turisticos_2);
+ 
+ //saída dos dados cidade 1
+ 
+ printf("\n---Dados da Cidade Cadastrada 1---\n");
+ printf("Estado da cidade 1: %c\n", estado_1);
+ printf("Codigo da Cidade 1: %s\n", codigo_1);
+ printf("Nome da Cidade 1: %s\n", cidade_1);
+ printf("Populacao 1: %d habitantes\n", populacao_1);
+ printf("Area da Cidade 1: %.2f km²\n", area_1);
+ printf("PIB da Cidade 1: %.2f milhoes\n", PIB_1);
+ printf("Quantidade pontos turisticos 1: %d\n", pontos_turisticos_1);
+ 
+ //saída dos dados cidade 2
+ 
+ printf("\n---Dados da Cidade Cadastrada 2---\n");
+ printf("Estado da cidade 2: %c\n", estado_2);
+ printf("Codigo da Cidade 2: %s\n", codigo_2);
+ printf("Nome da Cidade 2: %s\n", cidade_2);
+ printf("Populacao 2: %d habitantes\n", populacao_2);
+ printf("Area da Cidade 2: %.2f km²\n", area_2);
+ printf("PIB da Cidade 2: %.2f milhoes\n", PIB_2);
+ printf("Quantidade pontos turisticos 2: %d\n", pontos_turisticos_2);
+
+return 0;
+}
